@@ -10,6 +10,12 @@ To start a local development server, run:
 ng serve
 ```
 
+If you encounter any issues running the application with the command ng serve, please run the following command to install the necessary dependencies:
+
+```bash
+npm install
+```
+
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
 ## Code scaffolding
