@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+// styles.scss or component-specific SCSS file
+
+h1 {
+    text-align: center; // Center align the heading
+    font-size: 36px; // Increase font size for prominence
+    font-weight: bold; // Make the text bold
+    color: #001f3f; // Navy blue color for visibility
+    margin: 30px 0; // Add more margin above and below for spacing
+    text-transform: uppercase; // Transform text to uppercase for emphasis
+    letter-spacing: 2px; // Increase letter spacing for better readability
+    background: linear-gradient(90deg, #001f3f, #003366); // Gradient background from navy to dark blue
+    -webkit-background-clip: text; // Clip the background to text
+    -webkit-text-fill-color: transparent; // Make text color transparent to show gradient
+    padding: 10px 0; // Add padding for spacing
+    border-bottom: 3px solid #003366; // Change the bottom border color to match the gradient
+}

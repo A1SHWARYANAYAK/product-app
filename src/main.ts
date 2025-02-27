@@ -1,6 +1,16 @@
+// src/main.ts
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
+import { provideRouter, Routes } from '@angular/router';
 import { AppComponent } from './app/app.component';
+import { ProductListComponent } from './app/components/product-list/product-list.component';
+import { ProductDetailComponent } from './app/components/product-detail/product-detail.component';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+const routes: Routes = [
+  { path: 'products', component: ProductListComponent },
+  { path: 'products/:id', component: ProductDetailComponent },
+  { path: '', redirectTo: 'products', pathMatch: 'full' }
+];
+
+bootstrapApplication(AppComponent, {
+  providers: [provideRouter(routes)]
+}).catch(err => console.error(err));

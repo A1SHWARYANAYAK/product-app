@@ -1,0 +1,10 @@
+<!-- src/app/components/product-detail/product-detail.component.html -->
+<div *ngIf="product" class="product-detail">
+    <h2>{{ product.name }}</h2>
+    <div class="product-info">
+      <p class="price">Price: ${{ product.price }}</p>
+      <p class="description">{{ product.description }}</p>
+    </div>
+    <a routerLink="/products" class="back-link">Back to Products</a>
+  </div>
+  

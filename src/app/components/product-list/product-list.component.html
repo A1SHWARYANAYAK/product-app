@@ -1,0 +1,8 @@
+<!-- src/app/components/product-list/product-list.component.html -->
+<div class="product-list">
+    <h2>Product List</h2>
+    <div *ngFor="let product of products">
+      <app-product-card [product]="product" (viewDetails)="viewProductDetails($event)"></app-product-card>
+    </div>
+  </div>
+  

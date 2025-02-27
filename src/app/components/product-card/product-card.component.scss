@@ -1,0 +1,27 @@
+// src/app/components/product-card/product-card.component.scss
+
+.card {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer; /* Change cursor to pointer to indicate clickability */
+  
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background-color: #f8f9fa; /* Optional: Change background color on hover */
+    }
+  
+    h3 {
+      margin: 0;
+      color: #343a40; /* Change color to match your theme */
+    }
+  
+    p {
+      margin: 10px 0;
+      color: #495057; /* Change color for better readability */
+    }
+  }
+  
